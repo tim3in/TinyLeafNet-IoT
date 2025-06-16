@@ -7,6 +7,8 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 
 ## Results
 
-<img src="images/results.png"/><br/><br/>
+<img src="images/results.png"/>
 
-<img src="images/test_result.png"/>
+## How to use this model?
+
+Download the model and run the code in <code>TinyLeafNet_IoT.ipynb</code>.
