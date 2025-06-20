@@ -11,7 +11,7 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 ## Code
 
 The following code snippet is used to build model.
-<code>
+```
 import math, requests
 from pathlib import Path
 import tensorflow as tf
@@ -133,7 +133,7 @@ model.fit(train_dataset,
                 class_weight=None
             )
 
- </code>
+```
 
 ## Results
 
