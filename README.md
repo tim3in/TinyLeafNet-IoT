@@ -140,4 +140,4 @@ model.fit(train_dataset,
 <img src="images/results.png"/>
 
 ## How to use this model?
-To test our model, download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/model/tinyleafnetiot.lite">Model</a> and run the code in <code>TinyLeafNet_IoT.ipynb</code>.
+To test **TinyLeafNet-IoT** model, download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/model/tinyleafnetiot.lite">Model</a> and run the code in <code>TinyLeafNet_IoT.ipynb</code>.
