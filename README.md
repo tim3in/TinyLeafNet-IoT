@@ -18,10 +18,14 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 ```
 tomato-leaf-disease-export/
 ├── training/
-│   ├── image files
+│   ├── image_1.jpg
+│   ├── image_2.jpg
+│   ├── ...
 │   └── info.labels
 └── testing/
-    ├── image files
+    ├── image_1.jpg
+    ├── image_2.jpg
+    ├── ...
     └── info.labels
 ```
 ### Training
