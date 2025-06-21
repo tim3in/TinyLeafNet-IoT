@@ -13,7 +13,7 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 
 ## How to use this repository?
 ### Dataset Prepararion
-Download the dataset from <a href="https://github.com/spMohanty/PlantVillage-Dataset">PlantVillage dataset</a> and upload it to <a href="https://edgeimpulse.com/">Edge Impulse</a> and label it for image classification model. Then in Transfer Learning block choose `MobileNetV2 96x96 0.35` base model. After this in the Neural Network setting, switch to keras (expert) mode that will open code window. Use Neural Network code from `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` file to add the custom classification head.<br/><br/>
+Download the dataset from <a href="https://github.com/spMohanty/PlantVillage-Dataset">PlantVillage dataset</a> and upload it to <a href="https://edgeimpulse.com/">Edge Impulse</a> and label it for image classification model.<br/><br/>
 If you wish to train the model in jupyter notebook, export labelled dataset from <a href="https://edgeimpulse.com/">Edge Impulse</a>. Make sure your dataset has following directory structure for custom training.
 ```
 tomato-leaf-disease-export/
@@ -24,14 +24,14 @@ tomato-leaf-disease-export/
     ├── image files
     └── info.labels
 ```
+### Training
+- To train model with <a href="https://edgeimpulse.com/">Edge Impulse</a> choose `MobileNetV2 96x96 0.35` base model in Transfer Learning settings. Then in the Neural Network setting, switch to keras (expert) mode that will open code window. Use Neural Network code from `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` file to add the custom classification head and update training settings and hyperparameters.
+- For custom training use `TinyLeafNet_IoT_Custom_Training.ipynb` file in the `/code` directory to train model in Jupyter Notebook.
+<br/>
+
 ### Inferencing
 - To test **TinyLeafNet-IoT** model (trained using Edge Impulse), download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_EdgeImpulse.lite">Model</a> and run the code in `TinyLeafNet_IoT_Inferencing.ipynb`.
 - To test **TinyLeafNet-IoT** model (trained using jupyter notebook), download the <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_Custom.h5">Model Weights</a> and run the inference code provided in `TinyLeafNet_IoT_Custom_Training.ipynb`.
-
-### Training
-- Use `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` in the `/code` directory to train model in Edge Impulse.
-- Use `TinyLeafNet_IoT_Custom_Training.ipynb` in the `/code` directory to train model in Jupyter Notebook.
-<br/>
 
 *Note:* The model is trained to detect five classes:<br/>
 
