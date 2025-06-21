@@ -35,8 +35,8 @@ Edge Impulse uses following JSON label format for image classification models.<b
   "version": 1,
   "files": [
     {
-      "path": "image1.jpg",
-      "name": "image1",
+      "path": "image_1.jpg",
+      "name": "image_1",
       "category": "training",
       "label": {
         "type": "label",
@@ -44,8 +44,8 @@ Edge Impulse uses following JSON label format for image classification models.<b
       }
     },
     {
-      "path": "image2.jpg",
-      "name": "image2",
+      "path": "image_2.jpg",
+      "name": "image_2",
       "category": "training",
       "label": {
         "type": "label",
