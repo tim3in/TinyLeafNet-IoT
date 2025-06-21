@@ -27,7 +27,6 @@ tomato-leaf-disease-export/
 ### Training
 - To train model with <a href="https://edgeimpulse.com/">Edge Impulse</a> choose `MobileNetV2 96x96 0.35` base model in Transfer Learning settings. Then in the Neural Network setting, switch to keras (expert) mode that will open code window. Use Neural Network code from `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` file to add the custom classification head and update training settings and hyperparameters.
 - For custom training use `TinyLeafNet_IoT_Custom_Training.ipynb` file in the `/code` directory to train model in Jupyter Notebook.
-<br/>
 
 ### Inferencing
 - To test **TinyLeafNet-IoT** model (trained using Edge Impulse), download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_EdgeImpulse.lite">Model</a> and run the code in `TinyLeafNet_IoT_Inferencing.ipynb`.
