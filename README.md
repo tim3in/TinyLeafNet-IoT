@@ -13,7 +13,7 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 
 ## How to use this repository?
 ### Dataset Prepararion
-Download the dataset from <a href="https://github.com/spMohanty/PlantVillage-Dataset">PlantVillage dataset</a> and upload it to Edge Impulse and label it for image classification model.<br/><br/>
+Download the dataset from <a href="https://github.com/spMohanty/PlantVillage-Dataset">PlantVillage dataset</a> and upload it to <a href="https://edgeimpulse.com/">Edge Impulse</a> and label it for image classification model.<br/><br/>
 If you wish to train the model in jupyter notebook, export labelled dataset from Edge Impulse. Make sure your dataset has following directory structure for custom training.
 ```
 tomato-leaf-disease-export/
@@ -26,12 +26,14 @@ tomato-leaf-disease-export/
 ```
 ### Inferencing
 To test **TinyLeafNet-IoT** model (trained using Edge Impulse), download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_EdgeImpulse.lite">Model</a> and run the code in <code>TinyLeafNet_IoT_Inferencing.ipynb</code>. <br/><br/>
-<br/></br>
+
 ### Training
 - Use `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` in the `/code` directory to train model in Edge Impulse.
 - Use `TinyLeafNet_IoT_Custom_Training.ipynb` in the `/code` directory to train model in Jupyter Notebook.
 <br/>
+
 *Note:* The model is trained to detect five classes:<br/>
+
 - Late Blight
 - Leaf Mold
 - Septoria Leaf Spot
