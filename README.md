@@ -13,8 +13,8 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 
 ## How to use this repository?
 ### Dataset Prepararion
-Download the dataset from <a href="https://github.com/spMohanty/PlantVillage-Dataset">PlantVillage dataset</a> and upload it to <a href="https://edgeimpulse.com/">Edge Impulse</a> and label it for image classification model.<br/><br/>
-If you wish to train the model in jupyter notebook, export labelled dataset from Edge Impulse. Make sure your dataset has following directory structure for custom training.
+Download the dataset from <a href="https://github.com/spMohanty/PlantVillage-Dataset">PlantVillage dataset</a> and upload it to <a href="https://edgeimpulse.com/">Edge Impulse</a> and label it for image classification model. Then in Transfer Learning block choose `MobileNetV2 96x96 0.35` base model. After this in the Neural Network setting, switch to keras (expert) mode that will open code window. Use Neural Network code from `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` file to add the custom classification head.<br/><br/>
+If you wish to train the model in jupyter notebook, export labelled dataset from <a href="https://edgeimpulse.com/">Edge Impulse</a>. Make sure your dataset has following directory structure for custom training.
 ```
 tomato-leaf-disease-export/
 ├── training/
