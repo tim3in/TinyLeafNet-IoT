@@ -49,7 +49,7 @@ Edge Impulse uses following JSON label format for image classification models.<b
       "category": "training",
       "label": {
         "type": "label",
-        "label": "Healthy"
+        "label": "Late_Blight"
       }
     }
   ]
