@@ -28,6 +28,33 @@ tomato-leaf-disease-export/
     ├── ...
     └── info.labels
 ```
+Edge Impulse uses following JSON label format for image classification models.<br/>
+
+```json
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "image1.jpg",
+      "name": "image1",
+      "category": "training",
+      "label": {
+        "type": "label",
+        "label": "Yellow_Leaf_Curl_Virus"
+      }
+    },
+    {
+      "path": "image2.jpg",
+      "name": "image2",
+      "category": "training",
+      "label": {
+        "type": "label",
+        "label": "Healthy"
+      }
+    }
+  ]
+}
+```
 ### Training
 - To train model with <a href="https://edgeimpulse.com/">Edge Impulse</a> choose `MobileNetV2 96x96 0.35` base model in Transfer Learning settings. Then in the Neural Network setting, switch to keras (expert) mode that will open code window. Use Neural Network code from `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` file to add the custom classification head and update training settings and hyperparameters.
 - For custom training use `TinyLeafNet_IoT_Custom_Training.ipynb` file in the `/code` directory to train model in Jupyter Notebook.
