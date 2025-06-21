@@ -10,7 +10,7 @@ TinyLeafNet-IoT is a lightweight TinyML-based IoT system for real-time tomato le
 
 ## Code
 
-The following code snippet is used to build model.
+The following custom code is used in <a href="https://edgeimpulse.com/">Edge Impulse</a> to build model.
 ```
 import math, requests
 from pathlib import Path
@@ -136,8 +136,13 @@ model.fit(train_dataset,
 ```
 
 ## Results
-
 <img src="images/results.png"/>
 
 ## How to use this model?
-To test **TinyLeafNet-IoT** model, download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/model/tinyleafnetiot.lite">Model</a> and run the code in <code>TinyLeafNet_IoT.ipynb</code>.
+To test **TinyLeafNet-IoT** model, download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/model/tinyleafnetiot.lite">Model</a> and run the code in <code>TinyLeafNet_IoT.ipynb</code>. <br/><br/>
+*Note:* The model is trained to detect five classes:<br/>
+- Late Blight
+- Leaf Mold
+- Septoria Leaf Spot
+- Spider Mites
+- Yellow Leaf Curl Virus
