@@ -80,7 +80,7 @@ model.add(Dropout(0.25))
 model.add(Dense(classes, activation='softmax'))
 
 BATCH_SIZE = args.batch_size or 32
-EPOCHS = args.epochs or 20
+EPOCHS = args.epochs or 50
 LEARNING_RATE = args.learning_rate or 0.0005
 # If True, non-deterministic functions (e.g. shuffling batches) are not used.
 # This is False by default.
@@ -102,7 +102,7 @@ print('')
 print('Initial training done.', flush=True)
 
 # How many epochs we will fine tune the model
-FINE_TUNE_EPOCHS = 10
+FINE_TUNE_EPOCHS = 30
 # What percentage of the base model's layers we will fine tune
 FINE_TUNE_PERCENTAGE = 65
 
