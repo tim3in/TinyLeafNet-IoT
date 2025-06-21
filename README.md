@@ -25,7 +25,8 @@ tomato-leaf-disease-export/
     └── info.labels
 ```
 ### Inferencing
-To test **TinyLeafNet-IoT** model (trained using Edge Impulse), download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_EdgeImpulse.lite">Model</a> and run the code in <code>TinyLeafNet_IoT_Inferencing.ipynb</code>. <br/><br/>
+- To test **TinyLeafNet-IoT** model (trained using Edge Impulse), download the TensorFlow Lite <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_EdgeImpulse.lite">Model</a> and run the code in `TinyLeafNet_IoT_Inferencing.ipynb`.
+- To test **TinyLeafNet-IoT** model (trained using jupyter notebook), download the <a href="https://github.com/tim3in/TinyLeafNet-IoT/blob/main/models/TinyLeafNet-IoT_Custom.h5">Model Weights</a> and run the inference code provided in `TinyLeafNet_IoT_Custom_Training.ipynb`.
 
 ### Training
 - Use `TinyLeafNet-IoT_Model_Architecture_EdgeImpulse.py` in the `/code` directory to train model in Edge Impulse.
